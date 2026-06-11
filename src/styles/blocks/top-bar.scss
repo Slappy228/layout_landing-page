@@ -12,6 +12,20 @@
   &__icons {
     display: flex;
     gap: 24px;
+
+  }
+
+  &__phone-number {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    display: inline-block;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.3s ease, opacity 0.3s ease;
   }
 
   &__logo-link {

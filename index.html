@@ -50,10 +50,13 @@
               />
             </a>
             <div class="top-bar__icons">
-              <a
-                href="#"
-                class="icon icon--phone"
-              ></a>
+              <div class="icon___wrapper">
+                <span class="top-bar__phone-number">+1 234 555-55-55</span>
+                <a
+                  href="tel:+1 234 5555-55-55"
+                  class="icon icon--phone"
+                ></a>
+              </div>
               <a
                 href="#menu"
                 class="icon icon--menu"
@@ -106,7 +109,7 @@
               <li class="nav__item">
                 <a
                   class="nav__link"
-                  href="#"
+                  href="#recommended"
                 >
                   Store
                 </a>
@@ -114,7 +117,7 @@
               <li class="nav__item">
                 <a
                   class="nav__link"
-                  href="#"
+                  href="#about-us"
                 >
                   Login
                 </a>
@@ -122,7 +125,7 @@
               <li class="nav__item">
                 <a
                   class="nav__link"
-                  href="#"
+                  href="#contacts"
                 >
                   Cart(0)
                 </a>
@@ -147,7 +150,7 @@
 
     <main class="main">
       <div class="main__content">
-        <section class="recommended">
+        <section class="recommended" id="recommended">
           <div class="container">
             <h2 class="section-title">Recommended</h2>
             <div class="recommended__products">
@@ -297,7 +300,7 @@
           </div>
         </section>
 
-        <section class="about-us">
+        <section class="about-us" id="about-us">
           <div class="container">
             <h2 class="section-title about-us__title">About us</h2>
             <div class="about-us__content">
@@ -320,7 +323,7 @@
           </div>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="container">
             <h2 class="section-title contacts__main-title">Contact us</h2>
             <div class="contacts__wrapper">
@@ -330,16 +333,19 @@
                 class="contacts__form"
               >
                 <input
+                  required
                   type="text"
                   class="contacts__input"
                   placeholder="Name"
                 />
                 <input
+                  required
                   type="email"
                   class="contacts__input"
                   placeholder="Email"
                 />
                 <textarea
+                  required
                   class="contacts__input contacts__input--big"
                   placeholder="Message"
                 ></textarea>

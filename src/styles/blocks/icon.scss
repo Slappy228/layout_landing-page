@@ -26,4 +26,18 @@
   &--close {
     background-image: url(../icons/icon-close.svg);
   }
+
+  &___wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+    &:hover {
+      .top-bar__phone-number {
+        width: 150px;
+        opacity: 1;
+      }
+    }
+  }
 }
