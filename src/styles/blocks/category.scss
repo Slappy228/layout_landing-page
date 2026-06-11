@@ -35,10 +35,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
-    transition: transform 0.3s;
-  }
-  &__photo:hover {
-    transform: scale(1.1);
+    @include hover(transform, scale(1.05));
   }
   &__title {
     margin: 0;
